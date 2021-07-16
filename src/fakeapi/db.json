@@ -1,0 +1,87 @@
+{
+  "users": [
+    {
+      "fullName": "Mohammad Mauliadi",
+      "userName": "uls",
+      "email": "mohammad.mauliadi@gmail.com",
+      "password": "perbanas",
+      "role": "user",
+      "id": 1
+    },
+    {
+      "fullName": "Fajar Amirussidik",
+      "userName": "iyus",
+      "email": "iyus@mail.com",
+      "password": "perbanas",
+      "role": "user",
+      "id": 2
+    },
+    {
+      "fullName": "Diah",
+      "userName": "Ristie",
+      "email": "Diah@mail.com",
+      "password": "perbanas",
+      "role": "user",
+      "id": 3
+    },
+    {
+      "fullName": "Dian",
+      "userName": "Dijan",
+      "email": "dijan@mail.com",
+      "password": "perbanas",
+      "role": "user",
+      "id": 4
+    },
+    {
+      "fullName": "Aldi",
+      "userName": "aldi",
+      "email": "aldi@aldi.com",
+      "password": "perbanas",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "fullName": "Aldi2",
+      "userName": "aldi2",
+      "email": "aldi2@aldi.com",
+      "password": "perbanas",
+      "role": "user",
+      "id": 6
+    },
+    {
+      "fullName": "Aldi2",
+      "userName": "aldi2",
+      "email": "aldi2@aldi.com",
+      "password": "perbanas",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "fullName": "Aldi3",
+      "userName": "aldi3",
+      "email": "aldi3@mail.com",
+      "password": "perbanas",
+      "role": "user",
+      "id": 8
+    },
+    {
+      "fullName": "Fajar",
+      "userName": "Amirussidik",
+      "email": "user@mail.com",
+      "password": "perbanas",
+      "role": "user",
+      "id": 9
+    },
+    {
+      "fullName": "mauliadi",
+      "userName": "mauliadi",
+      "email": "mauliadi@mail.com",
+      "password": "perbanas",
+      "role": "user",
+      "id": 10
+    }
+  ],
+  "transactions": [],
+  "products": [],
+  "carts": []
+}

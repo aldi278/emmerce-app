@@ -12,28 +12,59 @@ import Cart from './pages/Cart';
 import History from './pages/History';
 import ProductDetail from './pages/ProductDetail';
 import MyNavbar from './components/MyNavbar';
+import { connect } from 'react-redux';
+import {userKeepLogin,checkStorage} from './redux/actions/user'
 
 
 class App extends React.Component {
+
+  componentDidMount(){
+    const userLocalStorage = localStorage.getItem("userDataEmmerce")
+
+    if(userLocalStorage){
+      const userDataObj = JSON.parse(userLocalStorage)
+      this.props.userKeepLogin(userDataObj)
+    }else{
+      this.props.checkStorage()
+    }
+  }
    
   render(){
-    return (
-      <BrowserRouter>
-        <MyNavbar/>
-        <Switch>
-          <Route component={Login} path="/login"/>
-          <Route component={Register} path="/register"/>
-          <Route component={Admin} path="/admin"/>
-          <Route component={Cart} path="/cart"/>
-          <Route component={History} path="/history"/>
-          <Route component={ProductDetail} path="/product-detail"/>
-          <Route component={Home} path="/"/>
-        </Switch>
-       
-      </BrowserRouter>
-      
-    )
+    if(this.props.userGlobalState.storageIsChecked){
+        return (
+          <BrowserRouter>
+            <MyNavbar/>
+            <Switch>
+              <Route component={Login} path="/login"/>
+              <Route component={Register} path="/register"/>
+              <Route component={Admin} path="/admin"/>
+              <Route component={Cart} path="/cart"/>
+              <Route component={History} path="/history"/>
+              <Route component={ProductDetail} path="/product-detail"/>
+              <Route component={Home} path="/"/>
+            </Switch>
+          
+          </BrowserRouter>
+          
+        )
+      }
+      return (
+        <div>
+          Loading...
+        </div>
+      )
+    }
+}
+
+const mapStateToProps = (state) => {
+  return {
+    userGlobalState : state.user
   }
 }
 
- export default App;
+const mapDispatchToProps = {
+  userKeepLogin,
+  checkStorage
+}
+
+ export default connect(mapStateToProps, mapDispatchToProps)(App);
