@@ -8,7 +8,7 @@ const init_state = {
     id : 0
 }
 
-export default (state = init_state, action) => {
+const reducer = (state = init_state, action) => {
     switch (action.type){
         case "USER_LOGIN":
             return {...state,...action.payload, storageIsChecked : true}
@@ -24,3 +24,5 @@ export default (state = init_state, action) => {
             break
     }
 }
+
+export default reducer;

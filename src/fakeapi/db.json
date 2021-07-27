@@ -82,6 +82,111 @@
     }
   ],
   "transactions": [],
-  "products": [],
+  "products": [
+    {
+      "id" : 1,
+      "productName" : "Kaos Biru",
+      "price" : 25000,
+      "productImage" : "https://dynamic.zacdn.com/O-jD0KaW7xf1yxBGadUbaDU4Yqg=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/osella-kids-3167-3972912-1.jpg",
+      "description" : "Kaos Biru Homemade good quality",
+      "category" : "kaos"
+    },
+    {
+      "id" : 2,
+      "productName" : "Kaos Hitam",
+      "price" : 20000,
+      "productImage" : "https://www.jakartanotebook.com/images/products/99/63/19076/2/kaos-polos-katun-pria-o-neck-size-l-81402b-or-t-shirt-black-24.jpg",
+      "description" : "Kaos Hitam Homemade good quality",
+      "category" : "kaos"
+    },
+    {
+      "id" : 3,
+      "productName" : "Kaos Putih",
+      "price" : 10000,
+      "productImage" : "https://www.jakartanotebook.com/images/products/99/63/19062/2/kaos-polos-katun-pria-lengan-pendek-o-neck-size-l-85606-or-t-shirt-black-11.jpg",
+      "description" : "Kaos Putih Homemade good quality",
+      "category" : "kaos"
+    },
+    {
+      "id" : 4,
+      "productName" : "Kaos Hitam Motif",
+      "price" : 50000,
+      "productImage" : "https://marjinkiri.com/wp-content/uploads/2019/04/Kaos.jpg",
+      "description" : "Kaos Hitam Motif Homemade good quality",
+      "category" : "kaos"
+    },
+    {
+      "id" : 5,
+      "productName" : "Kaos Hijau",
+      "price" : 45000,
+      "productImage" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDQuSEkbStXeXM3CACItWVBQj_Prn1UEKO-pUMfizhb5ykzBPGmz5jKOUd3VE&usqp=CAc",
+      "description" : "Kaos Hijau Homemade good quality",
+      "category" : "kaos"
+    },
+    {
+      "id" : 6,
+      "productName" : "Celana Panjang Biru",
+      "price" : 50000,
+      "productImage" : "https://contents.mediadecathlon.com/p1741277/k$3ca4434b0e2725e9b874436f3b3f004f/trousers-for-country-walks-nh100-men-s.jpg?&f=452x452",
+      "description" : "Celana Panjang Biru Homemade good quality",
+      "category" : "celana"
+    },
+    {
+      "id" : 7,
+      "productName" : "Celana panjang Cargo",
+      "price" : 60000,
+      "productImage" : "https://www.jakartanotebook.com/images/products/99/63/36388/2/celana-panjang-cargo-pria-tactical-waterproof-size-xl-black-1.jpg",
+      "description" : "Celana panjang Cargo Homemade good quality",
+      "category" : "celana"
+    },
+    {
+      "id" : 8,
+      "productName" : "Celana Pendek Cream",
+      "price" : 30000,
+      "productImage" : "https://dynamic.zacdn.com/MmgkO6CmvTrhlFrtAYcVmEQrTdY=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/cardinal-4072-3672012-1.jpg",
+      "description" : "Celana Pendek Cream good quality",
+      "category" : "celana"
+    },
+    {
+      "id" : 9,
+      "productName" : "Celana Pendek Coklat",
+      "price" : 35000,
+      "productImage" : "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//92/MTA-9136405/benhill_benhill_celana_pendek_pria_rib__art-45413-32560_full01_g7vwvv0o.jpg",
+      "description" : "Celana Pendek Coklat Homemade good quality",
+      "category" : "celana"
+    },
+    {
+      "id" : 10,
+      "productName" : "Celana Pendek Cream 3/4",
+      "price" : 35000,
+      "productImage" : "https://dynamic.zacdn.com/1pVvG6Gkd-rmU99DUlqjXTrf96U=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/bloods-industries-1833-3703082-1.jpg",
+      "description" : "Celana Pendek Cream 3/4 Homemade good quality",
+      "category" : "celana"
+    },
+    {
+      "id" : 11,
+      "productName" : "Celana Pendek Hitam",
+      "price" : 25000,
+      "productImage" : "https://cdn.elevenia.co.id/g/0/3/6/0/1/7/25036017_B.jpg",
+      "description" : "Celana Pendek Hitam Homemade good quality",
+      "category" : "celana"
+    },
+    {
+      "id" : 12,
+      "productName" : "Gelang Wanita",
+      "price" : 5000,
+      "productImage" : "https://tokonindy.files.wordpress.com/2017/01/aksesoris-gelang-cantik.jpg?w=540",
+      "description" : "Gelang Wanita Homemade good quality",
+      "category" : "aksesoris"
+    },
+    {
+      "id" : 13,
+      "productName" : "Ikat Pinggang Pria",
+      "price" : 25000,
+      "productImage" : "https://highlight.id/wp-content/uploads/2019/02/Highlight_jenis-macam-aksesoris-fashionable-pria-cowok-trendy-bagaimana-tampil-kece-kekinian-tips_06.jpg",
+      "description" : "Ikat Pinggang Pria good quality",
+      "category" : "aksesoris"
+    }
+  ],
   "carts": []
 }
