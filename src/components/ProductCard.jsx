@@ -1,5 +1,6 @@
 import React from 'react';
-import '../assets/styles/ProductCard.css'
+import '../assets/styles/ProductCard.css';
+import { Link } from 'react-router-dom';
 
 
 class ProductCard extends React.Component {
@@ -7,17 +8,22 @@ class ProductCard extends React.Component {
         return (
             <div className="card product-card">
                 <img src={this.props.productData.productImage}
-                alt="baju"/>
+                alt=""/>
                 <div className="mt-2">
-                    <h6>{this.props.productData.productName}</h6>
+                    <Link to={`/product-detail/${this.props.productData.id}`} style={{textDecoration : "none", color:"inherit"}}>
+                        <h6>{this.props.productData.productName}</h6>
+                    </Link>
                     <span className="text-muted">Rp. {this.props.productData.price}</span>
                 </div>
                 <div className="d-flex flex-row justify-content-end">
-                    <button className="btn btn-primary et-2">Add to Cart</button>
+                    <Link to={`/product-detail/${this.props.productData.id}`} style={{textDecoration : "none", color:"inherit"}}>
+                        <button className="btn btn-primary et-2">Add to Cart</button>
+                    </Link>
+                    
                 </div>
             </div>
         )
     }
 }
 
-export default ProductCard
+export default ProductCard;

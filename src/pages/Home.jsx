@@ -2,7 +2,6 @@ import React from 'react';
 import ProductCard from '../components/ProductCard';
 import Axios from 'axios';
 import { API_URL } from '../constant/API'
-import { result } from 'lodash';
 
 class Home extends React.Component {
     state = {
@@ -153,7 +152,6 @@ class Home extends React.Component {
                     </div>
                     <div className="col-9">
                         <div className="d-flex flex-warp flex-row">
-                        {/* Render Products Here */}
                         {this.renderProducts()}
                         </div>
                     </div>

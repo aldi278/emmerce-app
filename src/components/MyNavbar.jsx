@@ -13,48 +13,53 @@ class MyNavbar extends React.Component {
             <div>
                 <Navbar color="light" light>
                     <NavbarBrand>Emmerce</NavbarBrand>
-                <Nav>
-                    {
-                        this.props.userGlobal.userName ?
-                        <>
-                        <NavItem>
-                            <NavbarText className="nav ">Hello, {this.props.userGlobal.userName}</NavbarText>
-                        </NavItem>
-                        <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret>
-                                Pages
-                            </DropdownToggle>
-                            <DropdownMenu right>
-                                <DropdownItem>
-                                    <Link to="/cart">Cart</Link>
-                                </DropdownItem> 
-                                <DropdownItem>
-                                    <Link to="/history">History</Link>
-                                </DropdownItem>
-                                {
-                                    this.props.userGlobal.role === "Admin" ?
+                    <Nav>
+                        {
+                            this.props.userGlobal.userName ?
+                            <>
+                            <NavItem>
+                                <NavbarText className="nav mx-2">Hello, {this.props.userGlobal.userName}</NavbarText>
+                            </NavItem>
+                            <NavItem>
+                                <NavbarText className="nav mx-2">
+                                    <Link to="/" style={{textDecoration : "none", color:"inherit"}}>Home</Link>
+                                </NavbarText>
+                            </NavItem>
+                            <UncontrolledDropdown nav inNavbar>
+                                <DropdownToggle nav caret style={{color:"inherit"}}>
+                                    Pages
+                                </DropdownToggle>
+                                <DropdownMenu right>
                                     <DropdownItem>
-                                        <Link to="/admin">Admin</Link>
+                                        <Link to="/cart">Cart ({this.props.cartGlobal.cartList.length}</Link>
+                                    </DropdownItem> 
+                                    <DropdownItem>
+                                        <Link to="/history">History</Link>
                                     </DropdownItem>
-                                    :
-                                    null
-                                }
-                                <DropdownItem divider/>
-                                <DropdownItem onClick={this.props.logoutUser}>
-                                    Logout
-                                </DropdownItem>
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
-                        </>
-                        :
-                        <NavItem>
-                            <NavbarText>
-                                <Link to="/login">Login</Link> | <Link to="/register">Register</Link>
-                            </NavbarText>
-                        </NavItem>
-                    }
-                    
-                </Nav>
+                                    {
+                                        this.props.userGlobal.role === "admin" ?
+                                        <DropdownItem>
+                                            <Link to="/admin">Admin</Link>
+                                        </DropdownItem>
+                                        :
+                                        null
+                                    }
+                                    <DropdownItem divider/>
+                                    <DropdownItem onClick={this.props.logoutUser}>
+                                        Logout
+                                    </DropdownItem>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
+                            </>
+                            :
+                            <NavItem>
+                                <NavbarText>
+                                    <Link to="/login">Login</Link> | <Link to="/register">Register</Link>
+                                </NavbarText>
+                            </NavItem>
+                        }
+                        
+                    </Nav>
                 </Navbar>
                 
             </div>
@@ -65,6 +70,7 @@ class MyNavbar extends React.Component {
 const mapStateToProps = (state) => {
     return ({
         userGlobal : state.user,
+        cartGlobal : state.cart
     })
 }
 

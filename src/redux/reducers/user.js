@@ -15,10 +15,13 @@ const reducer = (state = init_state, action) => {
             break
         case "USER_ERROR":
             return {...state, errMsg : action.payload}
+            break
         case "USER_LOGOUT":
             return {...init_state, storageIsChecked : true}
+            break
         case "CHECK_STORAGE":
             return {...state, storageIsChecked : true}
+            break
         default:
             return state;
             break
